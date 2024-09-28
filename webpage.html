@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100rem;
+        background-image: linear-gradient(
+            rgba(162, 170, 201, 0.937),
+            rgba(56, 56, 193, 0.923)
+          ),
+          url("image1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+      }
+      .header {
+        justify-content: space-between;
+      }
+      nav {
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav img {
+        width: 100%;
+        border-radius: 50%;
+      }
+      .imglg {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 0px rgb(185, 185, 246);
+      }
+      imglg:hover {
+        background: transparent;
+      }
+      .nav links {
+        margin-top: 40px;
+      }
+
+      .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        justify-content: right;
+        position: relative;
+      }
+
+      .nav-links ul li::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: rgb(29, 65, 225);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+        box-shadow: 0px 0px 20px 0px rgb(14, 31, 90);
+      }
+
+      .nav-links ul li:hover::after {
+        width: 100%;
+      }
+
+      .nav-links ul li a {
+        text-decoration: none;
+        color: rgba(233, 233, 239, 0.756);
+        font-family: sans-serif;
+        font-weight: 800;
+        font-size: larger;
+        text-shadow: 0px 0px 20px rgb(144, 163, 238);
+
+        &:hover {
+          color: rgba(22, 15, 217, 0.699);
+        }
+      }
+
+      .text-box {
+        text-align: center;
+        font-size: 50px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: #034484;
+        text-shadow: 5px 8px 30px rgb(146, 146, 239);
+      }
+
+      p {
+        margin: 10px 0 40px;
+        margin-top: 5rem;
+        font-size: 16px;
+        color: rgb(238, 238, 239);
+        line-height: 2;
+        font-weight: 700;
+        font-family: "Akaya Kanadaka";
+        text-align: center;
+        text-shadow: 4px 4px 20px rgb(100, 125, 223);
+      }
+      .hero-btn {
+        margin: 20px;
+        margin-top: 5rem;
+        display: inline-block;
+        text-decoration: none;
+        color: hsl(238, 82%, 20%);
+        border: 2px solid rgb(250, 249, 252);
+        padding: 12px 34px;
+        font-size: 15px;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        line-height: 10px;
+      }
+      .hero-btn:hover {
+        border: 2px solid rgb(15, 21, 80);
+        background: rgb(81, 94, 208);
+        color: hsl(240, 19%, 85%);
+        border-radius: 2rem;
+        box-shadow: 4px 4px 20px 0px rgb(88, 88, 244);
+        transition: 0.6s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="about.html"><img class="imglg" src="shri.png" /></a>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="table.html">Timetable Generator</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section class="text">
+      <h1 class="text-box">Timetable Generator</h1>
+      <p>
+        <b><big>Anand Commerce college</big></b
+        ><br />
+        Managed By, shri Ramkrishna Seva Mandal<br />
+        Affilated to Sardar Patel University Vallabh Vishyanagar <br />
+        NAAC Re-Accredited-"A" Grade<br />
+
+        <a href="login.html" class="hero-btn">LOGIN</a>
+        <a href="about.html" class="hero-btn">About ACC</a>
+      </p>
+    </section>
+  </body>
+</html>
